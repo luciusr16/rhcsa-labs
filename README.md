@@ -1,20 +1,20 @@
 # rhcsa-labs 
 
-A collection of hands-on Linux system administration labs focused on RHCSA exam topics
+This is a collection of hands-on Linux system administration labs I covered while preparing for the Red Hat Certified System Administrator (RHCSA) exam. 
 
-## Purpose
-This repository documents practical Linux labs covering core system administration tasks such as storage, users, services, networking, and troubleshooting.
-
-## Topics Covered
+## Topics I Covered
 - Storage (LVM, ext4, XFS)
 - Users & Groups
 - Permissions & ACLs
-- systemd & Services
+- Security and SELinux
+- File navigation
+- System-maintenance & Services
 - Networking & firewalld
 - Logging & Troubleshooting
+- Automating manual taks with bash scripts
 
 Each lab includes:
-- Goal
-- Environment
-- Step-by-step commands
-- Notes and lessons learned
+- The Goal
+- The Environment the task was undertaken.
+- The Step-by-step bash commands
+- Finally some notes and lessons I learnt at the end. 
