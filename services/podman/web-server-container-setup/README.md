@@ -1,10 +1,14 @@
 # Rootless Apache Container with Podman 
 
 
-## Objective
-Deploy a persistent, rootless Apache HTTP container managed by systemd user service using Podman.
+## Overview 
+In this lab I deployed a persistent, rootless Apache HTTP container managed by systemd user service using Podman.
 
 The container serves web content from a host directory, survives reboot, and runs without root privileges.
+
+## Goals of the lab
+To ensure I understood how to secure production like container deployment using proper red hat tools. 
+The main focus points were rootless containers, persistnet storage , port mapping, environemental variables and managing the systemd lifecycle management. 
 
 
  Step 1: pull and tag the image
