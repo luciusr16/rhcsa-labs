@@ -19,7 +19,8 @@ Configure the system so that **DNF installs packages only from a locally mounted
 ## Environment
 - OS:  AlmaLinux 9 
 - Package Manager: `dnf`
-- ISO mounted at: `/opt/alma.iso`
+- ISO lives  at: `/opt/alma.iso`
+- Mount point is: `/mnt/local`
 - Repository files located in: `/etc/yum.repos.d/`
 
 ## Commands (Step by Step)
@@ -82,7 +83,7 @@ then back out using :wq! and use the command below to test the mount
 sudo mount -a
 ```
 ## notes and lessons learnt 
--A repository does **not** require internet access.  
--Any directory containing valid `repodata/` can be used as a DNF source.
-- DNF treats local repositories the same as remote ones by using the `file:///` URL scheme.
--- `BaseOS` and `AppStream` must be defined as **separate repositories** for proper package resolution on RHEL 9–based systems.
+A repository does **not** require internet access.  
+Any directory containing valid `repodata/` can be used as a DNF source.
+DNF treats local repositories the same as remote ones by using the `file:///` URL scheme.
+BaseOS and AppStream must be defined as **separate repositories** for proper package resolution on RHEL 9–based systems.
