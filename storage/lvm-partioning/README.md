@@ -44,7 +44,7 @@ echo '/dev/vgdata/lvfiles /data ext4 defaults 0 0' >> /etc/fstab
 ```
 ## Extend Logical Volume (Online)
 ```bash
-lvextend -L +500M /dev/vgdata/lvfiles
+lvextend -r -L +500M /dev/vgdata/lvfiles
 ```
 ## verify all
 ```bash
