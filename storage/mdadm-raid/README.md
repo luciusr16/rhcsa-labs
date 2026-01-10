@@ -16,14 +16,12 @@ RAID 1 provides disk redundancy by mirroring dataacross multiple disks, allowing
 ---
 
 ## Environment
-- Operating System: RHEL 9 / AlmaLinux 9
+- Operating System:AlmaLinux 9
 - RAID tool: mdadm
 - Disks used: `/dev/sdb`, `/dev/sdc` (unused disks)
 - RAID device: `/dev/md0`
 - Mount point: `/mnt/raid1`
 
-> ⚠️ **Warning:** This lab uses dedicated disks.  
-> All existing data on the disks will be destroyed.
 
 ## Commands (Step by Step)
 
@@ -69,8 +67,4 @@ sudo mount -a
 - Software RAID using `mdadm` is still relevant for boot disks, virtual machines, and environments without hardware RAID.
 - RAID 1 provides redundancy by mirroring data but does **not** increase usable storage capacity.
 - A RAID device behaves like a normal block device once created and must be formatted and mounted like any other disk.
-- The RAID array must be recorded in `/etc/mdadm.conf` so it can be reassembled automatically at boot.
-- Filesystem mounts must be added to `/etc/fstab` to ensure persistence across reboots.
-- RAID protects against disk failure but does **not** replace proper backups.
-- Monitoring RAID status using `/proc/mdstat` and `mdadm --detail` is essential to detect degraded arrays.
-- Disk replacement and rebuilds can be performed online without shutting down the system.
+
