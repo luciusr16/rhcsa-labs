@@ -28,6 +28,10 @@ change this line to "no"
 ```bash
 PasswordAuthentication no 
 ```
+then back out of the file using :wq and restart ssh 
+```bash
+systemctl restart sshd 
+```
 Step 5: configure a user for passwordless logins using ssh-keys instead 
 ```bash
 ssh-keygen
